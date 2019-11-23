@@ -1,11 +1,2 @@
-$mainBlue: #2f5571;
-
-body {
-	color: orange;
-}
-
-.large-hero {
-	h2 {
-		color: $mainBlue;
-	}
-}
+@import 'modules/_large-hero';
+@import 'base/_global';

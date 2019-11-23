@@ -116,7 +116,7 @@ eval("var content = __webpack_require__(/*! !../../../node_modules/css-loader/di
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"body {\\r\\n\\tcolor: orange;\\r\\n}\\r\\n\\r\\n.large-hero h2 {\\r\\n\\t\\tcolor: #2f5571;\\r\\n\\t}\\r\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./app/assets/styles/styles.css?./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--4-2");
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".large-hero {\\r\\n\\tposition: relative;\\r\\n}\\r\\n\\r\\n.large-hero__text-content {\\r\\n\\t/*align vertically*/\\r\\n\\tposition: absolute;\\r\\n\\ttop: 50%;\\r\\n\\tleft: 0; /*we can use \\\"right:0\\\" aswell*/\\r\\n\\ttransform: translateY(-50%);\\r\\n\\t/* align horizontally */\\r\\n\\twidth: 100%;\\r\\n\\ttext-align: center;\\r\\n}\\r\\n\\r\\nbody {\\r\\n\\tfont-family: 'Roboto', sans-serif;\\r\\n\\tcolor: #333;\\r\\n}\\r\\n\\r\\nimg {\\r\\n\\tmax-width: 100%;\\r\\n\\theight: auto;\\r\\n}\\r\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./app/assets/styles/styles.css?./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--4-2");
 
 /***/ }),
 
