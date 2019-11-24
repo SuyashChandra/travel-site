@@ -1,10 +1,10 @@
 const path = require('path');
 
 const postCSSPlugins = [
-	require('postcss-simple-vars'),
-	require('postcss-nested'),
+	require('postcss-import'),
 	require('autoprefixer'),
-	require('postcss-import')
+	require('postcss-simple-vars'),
+	require('postcss-nested')
 ];
 
 module.exports = {
@@ -13,8 +13,16 @@ module.exports = {
 		filename: 'bundled.js',
 		path: path.resolve(__dirname, 'app')
 	},
+	devServer: {
+		before: function(app, server) {
+			server._watch('./app/**/*.html');
+		},
+		contentBase: path.join(__dirname, 'app'),
+		hot: true,
+		port: 8080,
+		host: '0.0.0.0'
+	},
 	mode: 'development',
-	watch: true,
 	module: {
 		rules: [
 			{
